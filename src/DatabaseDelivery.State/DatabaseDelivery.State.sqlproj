@@ -63,10 +63,24 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
     <Folder Include="Security\" />
+    <Folder Include="Scripts" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\employees.sql" />
-    <Build Include="dbo\Tables\titles.sql" />
-    <Build Include="dbo\Views\employee_positions.sql" />
+    <Build Include="dbo\Stored Procedures\sp_SelectUsers.sql" />
+    <Build Include="dbo\Tables\Settings.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\UserStatus.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\ReferenceData.sql" />
+    <None Include="SqlSchemaCompare.scmp" />
+    <None Include="DatabaseDelivery.State.publish.xml" />
   </ItemGroup>
 </Project>
