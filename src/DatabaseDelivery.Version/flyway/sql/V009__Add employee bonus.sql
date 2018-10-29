@@ -1,0 +1,3 @@
+ALTER TABLE employees
+ADD bonus INT NULL
+GO
